@@ -41,9 +41,6 @@ button {
 }
 
 /* about section container */
-.about-section-container {
-  border: 2px solid red;
-}
 
 .about-section {
   display: flex;
@@ -54,7 +51,6 @@ button {
 .about-section img {
   width: 532.07px;
   height: 600px;
-  border: 2px solid red;
 }
 
 .about-section > div  >h1 {
@@ -69,10 +65,22 @@ button {
 @media screen and (max-width:576px) {
   .nav-container>ul, .about-section{
     flex-direction: column;
-    /* justify-content: center; */
+    gap: 20px;
   }
-  .about-section img, .about-section-container{
+ 
+  .about-section img{
     width: 100%;
   }
-}
+  .about-section img{
+    height: 100%;
 
+  }
+  .about-section > div  >h1  {
+    font-size: 70px;
+  }
+  .about-section > div {
+    text-align: center;
+  }
+ 
+ 
+}
